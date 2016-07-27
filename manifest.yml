@@ -1,8 +1,12 @@
 ---
 applications:
-- name: rds-broker
+- name: dto-rds-broker
+  buildpack: https://github.com/cloudfoundry/go-buildpack.git
+  command: dto-rds-broker
   memory: 256M
   env:
+    GOVERSION: go1.6
+    GOPACKAGENAME: github.com/davecheney/dto-rds-broker
     AUTH_USER: user
     AUTH_PASS: pass
     DB_URL: 10.244.0.30
