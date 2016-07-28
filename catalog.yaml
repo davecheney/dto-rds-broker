@@ -1,7 +1,7 @@
 services:
   -
     id: "db80ca29-2d1b-4fbc-aad3-d03c0bfa7593"
-    name: "dto-rds-broker"
+    name: "dto-shared-pgsql"
     description: "RDS Database Broker"
     bindable: true
     tags:
